@@ -30,5 +30,10 @@ namespace SmartBalance
                 this.WindowState = WindowState.Normal;
             }
         }
+
+        private void CollapseControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
     }
 }

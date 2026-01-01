@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Resources\BaseControlsImages\CollapseControlImage.png" />
     <None Remove="Views\Resources\BaseControlsImages\Narrow-ExpandControlImage.png" />
   </ItemGroup>
 
@@ -32,6 +33,7 @@
 
   <ItemGroup>
     <Resource Include="Views\Resources\BaseControlsImages\CloseControlImage.png" />
+    <Resource Include="Views\Resources\BaseControlsImages\CollapseControlImage.png" />
     <Resource Include="Views\Resources\BaseControlsImages\Narrow-ExpandControlImage.png" />
   </ItemGroup>
 

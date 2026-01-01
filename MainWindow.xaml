@@ -28,15 +28,18 @@
             <RowDefinition Height=".5*"/>
         </Grid.RowDefinitions>
 
-        <!-- Левая панель -->
+        <!-- LeftPanel -->
         <Rectangle Grid.Column="0" Grid.RowSpan="3"
-                   Fill="#171a16"/>
+                   Fill="#1c1c1c"/>
         
         <!-- BaseControls -->
         <StackPanel Grid.Column="1" Grid.Row="0"
                     Orientation="Horizontal"
                     HorizontalAlignment="Right"
                     Margin="10">
+
+            <bc:CollapseControl Height="20" Width="35" 
+                                MouseLeftButtonDown="CollapseControl_MouseLeftButtonDown"/>
             <bc:Narrow_ExpandControl Height="20" Width="20" 
                                      Margin="5 0 5 0"
                                      MouseLeftButtonDown="Narrow_ExpandControl_MouseLeftButtonDown"/>

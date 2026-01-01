@@ -3,11 +3,11 @@
 namespace SmartBalance.Views.Controls.BaseControls
 {
     /// <summary>
-    /// Логика взаимодействия для Narrow_ExpandControl.xaml
+    /// Логика взаимодействия для CollapseControl.xaml
     /// </summary>
-    public partial class Narrow_ExpandControl : UserControl
+    public partial class CollapseControl : UserControl
     {
-        public Narrow_ExpandControl()
+        public CollapseControl()
         {
             InitializeComponent();
         }
