@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:SmartBalance"
         mc:Ignorable="d"
         Title="Умный Баланс" 
-        Height="450" Width="800"
+        Height="600" Width="950"
         WindowStyle="None"
-        WindowState="Maximized">
+        WindowStartupLocation="CenterScreen">
     
     <Grid>
         
