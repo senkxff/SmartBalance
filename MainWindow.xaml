@@ -9,9 +9,25 @@
         Height="600" Width="950"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen">
-    
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CornerRadius="2"
+                      CaptionHeight="5"/>
+    </WindowChrome.WindowChrome>
+
     <Grid>
-        
+        <!-- Сетка -->
+        <Grid ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".25*"/>
+                <ColumnDefinition Width=".75*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height=".4*"/>
+                <RowDefinition Height=".5*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
     </Grid>
-    
 </Window>
