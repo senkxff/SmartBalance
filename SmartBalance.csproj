@@ -8,4 +8,24 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\Base\" />
+    <Folder Include="Views\Controls\GeneralControls\" />
+    <Folder Include="Views\Controls\BaseControls\" />
+    <Folder Include="Views\Controls\PagesControls\ExpensesPageControls\" />
+    <Folder Include="Views\Controls\PagesControls\IncomePageControls\" />
+    <Folder Include="Views\Controls\PagesControls\WalletsPageControls\" />
+    <Folder Include="Views\Controls\LeftPanelControls\" />
+    <Folder Include="Views\Resources\BaseControlsImages\" />
+    <Folder Include="Views\Resources\LeftPanelControlsImages\" />
+    <Folder Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\" />
+    <Folder Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\" />
+    <Folder Include="Views\Resources\PagesControlsImages\WalletsPageControlsImages\" />
+    <Folder Include="Views\Windows\General\" />
+    <Folder Include="Views\Windows\Warning\" />
+    <Folder Include="Views\Windows\Forms\" />
+    <Folder Include="Views\Pages\" />
+  </ItemGroup>
+
 </Project>
