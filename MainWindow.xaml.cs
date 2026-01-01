@@ -11,5 +11,10 @@ namespace SmartBalance
         {
             InitializeComponent();
         }
+
+        private void CloseControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

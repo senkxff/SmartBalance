@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmartBalance"
+        xmlns:bc="clr-namespace:SmartBalance.Views.Controls.BaseControls"
         mc:Ignorable="d"
         Title="Умный Баланс" 
         Height="600" Width="950"
@@ -22,15 +23,23 @@
             <ColumnDefinition Width=".75*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="35"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height=".4*"/>
             <RowDefinition Height=".5*"/>
         </Grid.RowDefinitions>
 
-        
         <!-- Левая панель -->
         <Rectangle Grid.Column="0" Grid.RowSpan="3"
                    Fill="#171a16"/>
+        
+        <!-- BaseControls -->
+        <StackPanel Grid.Column="1" Grid.Row="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="10">
+            <bc:CloseControl Height="20" Width="20"
+                             MouseLeftButtonDown="CloseControl_MouseLeftButtonDown"/>
+        </StackPanel>
 
     </Grid>
 </Window>
