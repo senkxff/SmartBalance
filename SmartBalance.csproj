@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Resources\BaseControlsImages\Narrow-ExpandControlImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="ViewModels\Base\" />
     <Folder Include="Views\Controls\GeneralControls\" />
@@ -28,6 +32,7 @@
 
   <ItemGroup>
     <Resource Include="Views\Resources\BaseControlsImages\CloseControlImage.png" />
+    <Resource Include="Views\Resources\BaseControlsImages\Narrow-ExpandControlImage.png" />
   </ItemGroup>
 
 </Project>

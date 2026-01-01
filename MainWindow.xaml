@@ -12,8 +12,8 @@
         WindowStartupLocation="CenterScreen">
 
     <WindowChrome.WindowChrome>
-        <WindowChrome CornerRadius="2"
-                      CaptionHeight="5"/>
+        <WindowChrome CornerRadius="20"
+                      CaptionHeight="10"/>
     </WindowChrome.WindowChrome>
 
     <Grid>
@@ -37,7 +37,10 @@
                     Orientation="Horizontal"
                     HorizontalAlignment="Right"
                     Margin="10">
-            <bc:CloseControl Height="20" Width="20"
+            <bc:Narrow_ExpandControl Height="20" Width="20" 
+                                     Margin="5 0 5 0"
+                                     MouseLeftButtonDown="Narrow_ExpandControl_MouseLeftButtonDown"/>
+            <bc:CloseControl Height="22" Width="22"
                              MouseLeftButtonDown="CloseControl_MouseLeftButtonDown"/>
         </StackPanel>
 

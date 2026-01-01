@@ -1,14 +1,14 @@
-﻿<UserControl x:Class="SmartBalance.Views.Controls.BaseControls.CloseControl"
+﻿<UserControl x:Class="SmartBalance.Views.Controls.BaseControls.Narrow_ExpandControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SmartBalance.Views.Controls.BaseControls"
              mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="20"
              Background="Transparent"
-             d:DesignWidth="20" d:DesignHeight="20"
              Cursor="Hand"
-             ToolTip="Закрыть">
+             ToolTip="Изменить размер">
 
     <!-- Анимация при наведении -->
     <UserControl.Triggers>
@@ -27,19 +27,19 @@
         <EventTrigger RoutedEvent="MouseLeave">
             <BeginStoryboard>
                 <Storyboard>
-                    <DoubleAnimation To="22"
+                    <DoubleAnimation To="20"
                                      Duration="0:0:0.2"
                                      Storyboard.TargetProperty="Width"/>
-                    <DoubleAnimation To="22"
+                    <DoubleAnimation To="20"
                                      Duration="0:0:0.2"
                                      Storyboard.TargetProperty="Height"/>
                 </Storyboard>
             </BeginStoryboard>
         </EventTrigger>
     </UserControl.Triggers>
-
-    <!-- CloseControl -->
+    
+    <!-- Narrow-ExpandControl -->
     <Grid>
-        <Image Source="/Views/Resources/BaseControlsImages/CloseControlImage.png"/>
+        <Image Source="/Views/Resources/BaseControlsImages/Narrow-ExpandControlImage.png"/>
     </Grid>
 </UserControl>
