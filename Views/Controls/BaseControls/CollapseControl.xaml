@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SmartBalance.Views.Controls.BaseControls"
              mc:Ignorable="d" 
-             d:DesignHeight="20" d:DesignWidth="35"
+             d:DesignHeight="30" d:DesignWidth="30"
              Cursor="Hand"
              ToolTip="Свернуть">
 
@@ -14,10 +14,10 @@
         <EventTrigger RoutedEvent="MouseEnter">
             <BeginStoryboard>
                 <Storyboard>
-                    <DoubleAnimation To="40"
+                    <DoubleAnimation To="35"
                                      Duration="0:0:0.2"
                                      Storyboard.TargetProperty="Width"/>
-                    <DoubleAnimation To="25"
+                    <DoubleAnimation To="35"
                                      Duration="0:0:0.2"
                                      Storyboard.TargetProperty="Height"/>
                 </Storyboard>
@@ -26,10 +26,10 @@
         <EventTrigger RoutedEvent="MouseLeave">
             <BeginStoryboard>
                 <Storyboard>
-                    <DoubleAnimation To="40"
+                    <DoubleAnimation To="30"
                              Duration="0:0:0.2"
                              Storyboard.TargetProperty="Width"/>
-                    <DoubleAnimation To="20"
+                    <DoubleAnimation To="30"
                              Duration="0:0:0.2"
                              Storyboard.TargetProperty="Height"/>
                 </Storyboard>

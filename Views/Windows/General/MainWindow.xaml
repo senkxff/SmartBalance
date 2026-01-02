@@ -24,7 +24,7 @@
             <ColumnDefinition Width=".75*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
             <RowDefinition Height=".4*"/>
             <RowDefinition Height=".5*"/>
         </Grid.RowDefinitions>
@@ -35,7 +35,7 @@
                    Fill="#1c1c1c"/>
 
         <StackPanel Grid.Column="0" Grid.Row="1"
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Center"
                     Margin="10">
             <lpc:IncomeControl Width="210" Height="50"/>
         </StackPanel>
@@ -46,12 +46,11 @@
                     HorizontalAlignment="Right"
                     Margin="10">
 
-            <bc:CollapseControl Height="20" Width="35" 
+            <bc:CollapseControl Height="30" Width="30" 
                                 MouseLeftButtonDown="CollapseControl_MouseLeftButtonDown"/>
-            <bc:Narrow_ExpandControl Height="20" Width="20" 
-                                     Margin="5 0 5 0"
+            <bc:Narrow_ExpandControl Height="30" Width="30" 
                                      MouseLeftButtonDown="Narrow_ExpandControl_MouseLeftButtonDown"/>
-            <bc:CloseControl Height="22" Width="22"
+            <bc:CloseControl Height="30" Width="30"
                              MouseLeftButtonDown="CloseControl_MouseLeftButtonDown"/>
         </StackPanel>
         <!-- -->
