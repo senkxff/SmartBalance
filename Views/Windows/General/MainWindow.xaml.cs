@@ -19,6 +19,7 @@ namespace SmartBalance
         private readonly AnalyticPage analyticPage = new();
         private readonly StoryPage storyPage = new();
         private readonly AdvicePage advicePage = new();
+        private readonly SettingsPage settingsPage = new();
 
         public MainWindow()
         {
@@ -102,6 +103,10 @@ namespace SmartBalance
         private void AdviceControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Navigate(advicePage);
+        }
+        private void SettingsControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Navigate(settingsPage);
         }
     }
 }

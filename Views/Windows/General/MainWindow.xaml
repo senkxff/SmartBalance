@@ -67,7 +67,8 @@
                 <lpc:SettingsControl Grid.Column="0" Grid.Row="1"
                                      Width="250" Height="50"
                                      Margin="10"
-                                     HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                                     HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                                     MouseLeftButtonDown="SettingsControl_MouseLeftButtonDown"/>
             
             <!-- Анимация при наведении -->
             <Grid.Triggers>
