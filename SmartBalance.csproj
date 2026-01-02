@@ -12,6 +12,7 @@
   <ItemGroup>
     <None Remove="Views\Resources\BaseControlsImages\CollapseControlImage.png" />
     <None Remove="Views\Resources\BaseControlsImages\Narrow-ExpandControlImage.png" />
+    <None Remove="Views\Resources\LeftPanelControlsImages\IncomeControlImage.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,8 +26,6 @@
     <Folder Include="Views\Controls\PagesControls\ExpensesPageControls\" />
     <Folder Include="Views\Controls\PagesControls\IncomePageControls\" />
     <Folder Include="Views\Controls\PagesControls\WalletsPageControls\" />
-    <Folder Include="Views\Controls\LeftPanelControls\" />
-    <Folder Include="Views\Resources\LeftPanelControlsImages\" />
     <Folder Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\" />
     <Folder Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\" />
     <Folder Include="Views\Resources\PagesControlsImages\WalletsPageControlsImages\" />
@@ -43,6 +42,7 @@
     <Resource Include="Views\Resources\BaseControlsImages\CloseControlImage.png" />
     <Resource Include="Views\Resources\BaseControlsImages\CollapseControlImage.png" />
     <Resource Include="Views\Resources\BaseControlsImages\Narrow-ExpandControlImage.png" />
+    <Resource Include="Views\Resources\LeftPanelControlsImages\IncomeControlImage.png" />
   </ItemGroup>
 
 </Project>

@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmartBalance"
         xmlns:bc="clr-namespace:SmartBalance.Views.Controls.BaseControls"
+        xmlns:lpc="clr-namespace:SmartBalance.Views.Controls.LeftPanelControls"
         mc:Ignorable="d"
         Title="Умный Баланс" 
         Height="600" Width="950"
@@ -27,11 +28,18 @@
             <RowDefinition Height=".4*"/>
             <RowDefinition Height=".5*"/>
         </Grid.RowDefinitions>
+        <!-- -->
 
         <!-- LeftPanel -->
         <Rectangle Grid.Column="0" Grid.RowSpan="3"
                    Fill="#1c1c1c"/>
-        
+
+        <StackPanel Grid.Column="0" Grid.Row="1"
+                    HorizontalAlignment="Left"
+                    Margin="10">
+            <lpc:IncomeControl Width="210" Height="50"/>
+        </StackPanel>
+
         <!-- BaseControls -->
         <StackPanel Grid.Column="1" Grid.Row="0"
                     Orientation="Horizontal"
@@ -46,6 +54,6 @@
             <bc:CloseControl Height="22" Width="22"
                              MouseLeftButtonDown="CloseControl_MouseLeftButtonDown"/>
         </StackPanel>
-
+        <!-- -->
     </Grid>
 </Window>
