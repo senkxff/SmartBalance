@@ -8,7 +8,7 @@
         xmlns:lpc="clr-namespace:SmartBalance.Views.Controls.LeftPanelControls"
         mc:Ignorable="d"
         Title="Умный Баланс" 
-        MinHeight="600" MinWidth="1000"
+        MinHeight="600" MinWidth="900" Width="1000"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen">
 
@@ -30,35 +30,62 @@
         <!-- -->
 
         <!-- LeftPanel -->
-        <Rectangle Grid.Column="0" Grid.RowSpan="3"
-                   Fill="#1c1c1c"
-                   Width="275"/>
+        <Grid Grid.Column="0" Grid.RowSpan="3" 
+              HorizontalAlignment="Left" 
+              Width="68">
+            <Rectangle Grid.Column="0" Grid.RowSpan="3"
+                       Fill="#1c1c1c"
+                       Width="275"/>
 
-        <StackPanel Grid.Column="0" Grid.Row="1"
-                    HorizontalAlignment="Left"
-                    Margin="10">
-            <lpc:IncomeControl Width="210" Height="50"
-                               HorizontalAlignment="Left"/>
-            <lpc:ExpensesControl Width="220" Height="50"
-                                 Margin="0 10 0 0"
-                                 HorizontalAlignment="Left"/>
-            <lpc:WalletsControl Width="240" Height="50"
-                                Margin="0 10 0 0"
-                                HorizontalAlignment="Left"/>
-            <lpc:AnalyticControl Width="250" Height="50"
-                                 Margin="0 10 0 0"
-                                 HorizontalAlignment="Left"/>
-            <lpc:StoryControl Width="210" Height="50"
-                              Margin="0 10 0 0"
-                              HorizontalAlignment="Left"/>
-            <lpc:AdviceControl Width="200" Height="50"
-                               Margin="0 10 0 0"
-                               HorizontalAlignment="Left"/>
-        </StackPanel>
-            <lpc:SettingsControl Grid.Column="0" Grid.Row="1"
-                                 Width="250" Height="50"
-                                 Margin="10"
-                                 HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <StackPanel Grid.Column="0" Grid.RowSpan="2"
+                        HorizontalAlignment="Left"
+                        Margin="10">
+                <lpc:IncomeControl Width="210" Height="50"
+                                   HorizontalAlignment="Left"/>
+                <lpc:ExpensesControl Width="220" Height="50"
+                                     Margin="0 10 0 0"
+                                     HorizontalAlignment="Left"/>
+                <lpc:WalletsControl Width="240" Height="50"
+                                    Margin="0 10 0 0"
+                                    HorizontalAlignment="Left"/>
+                <lpc:AnalyticControl Width="250" Height="50"
+                                     Margin="0 10 0 0"
+                                     HorizontalAlignment="Left"/>
+                <lpc:StoryControl Width="210" Height="50"
+                                  Margin="0 10 0 0"
+                                  HorizontalAlignment="Left"/>
+                <lpc:AdviceControl Width="200" Height="50"
+                                   Margin="0 10 0 0"
+                                   HorizontalAlignment="Left"/>
+            </StackPanel>
+                <lpc:SettingsControl Grid.Column="0" Grid.Row="1"
+                                     Width="250" Height="50"
+                                     Margin="10"
+                                     HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            
+            <!-- Анимация при наведении -->
+            <Grid.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation To="275"
+                                             Duration="0:0:0.3"
+                                             Storyboard.TargetProperty="Width"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation To="65"
+                                             Duration="0:0:0.3"
+                                             Storyboard.TargetProperty="Width"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Grid.Triggers>
+            
+        </Grid>
         <!-- -->
 
         <!-- BaseControls -->
