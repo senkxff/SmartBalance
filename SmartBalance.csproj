@@ -12,6 +12,7 @@
   <ItemGroup>
     <None Remove="Views\Resources\BaseControlsImages\CollapseControlImage.png" />
     <None Remove="Views\Resources\BaseControlsImages\Narrow-ExpandControlImage.png" />
+    <None Remove="Views\Resources\LeftPanelControlsImages\AdviceControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\AnalyticControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\ExpensesControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\IncomeControlImage.png" />
@@ -46,6 +47,7 @@
     <Resource Include="Views\Resources\BaseControlsImages\CloseControlImage.png" />
     <Resource Include="Views\Resources\BaseControlsImages\CollapseControlImage.png" />
     <Resource Include="Views\Resources\BaseControlsImages\Narrow-ExpandControlImage.png" />
+    <Resource Include="Views\Resources\LeftPanelControlsImages\AdviceControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\AnalyticControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\ExpensesControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\IncomeControlImage.png" />
