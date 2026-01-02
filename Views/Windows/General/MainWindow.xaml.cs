@@ -14,6 +14,7 @@ namespace SmartBalance
     {
         // объявление и создание страниц
         private readonly IncomePage incomePage = new();
+        private readonly ExpensesPage expensesPage = new();
 
         public MainWindow()
         {
@@ -21,6 +22,7 @@ namespace SmartBalance
             Navigate(incomePage);
         }
 
+        // базовые кнопки
         private void CloseControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             ClosingWarningWindow closingWarningWindow = new ClosingWarningWindow();
@@ -76,6 +78,11 @@ namespace SmartBalance
         private void IncomeControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Navigate(incomePage);
+        }
+
+        private void ExpensesControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Navigate(expensesPage);
         }
     }
 }

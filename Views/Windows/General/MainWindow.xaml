@@ -45,7 +45,8 @@
                                    MouseLeftButtonDown="IncomeControl_MouseLeftButtonDown"/>
                 <lpc:ExpensesControl Width="220" Height="50"
                                      Margin="0 10 0 0"
-                                     HorizontalAlignment="Left"/>
+                                     HorizontalAlignment="Left"
+                                     MouseLeftButtonDown="ExpensesControl_MouseLeftButtonDown"/>
                 <lpc:WalletsControl Width="240" Height="50"
                                     Margin="0 10 0 0"
                                     HorizontalAlignment="Left"/>
