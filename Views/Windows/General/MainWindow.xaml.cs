@@ -18,6 +18,7 @@ namespace SmartBalance
         private readonly WalletsPage walletsPage = new();
         private readonly AnalyticPage analyticPage = new();
         private readonly StoryPage storyPage = new();
+        private readonly AdvicePage advicePage = new();
 
         public MainWindow()
         {
@@ -82,27 +83,25 @@ namespace SmartBalance
         {
             Navigate(incomePage);
         }
-
         private void ExpensesControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Navigate(expensesPage);
         }
-
         private void WalletsControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Navigate(walletsPage);
         }
-
         private void AnalyticControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Navigate(analyticPage);
         }
-
         private void StoryControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Navigate(storyPage);
         }
-
-
+        private void AdviceControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Navigate(advicePage);
+        }
     }
 }
