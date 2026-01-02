@@ -8,7 +8,7 @@
         xmlns:lpc="clr-namespace:SmartBalance.Views.Controls.LeftPanelControls"
         mc:Ignorable="d"
         Title="Умный Баланс" 
-        Height="600" Width="950"
+        Height="600" Width="1000"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen">
 
@@ -35,9 +35,11 @@
                    Fill="#1c1c1c"/>
 
         <StackPanel Grid.Column="0" Grid.Row="1"
-                    HorizontalAlignment="Center"
+                    HorizontalAlignment="Stretch"
                     Margin="10">
             <lpc:IncomeControl Width="210" Height="50"/>
+            <lpc:ExpensesControl Width="220" Height="50"
+                                 Margin="0 10 0 0"/>
         </StackPanel>
 
         <!-- BaseControls -->
