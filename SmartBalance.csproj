@@ -16,6 +16,7 @@
     <None Remove="Views\Resources\LeftPanelControlsImages\AnalyticControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\ExpensesControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\IncomeControlImage.png" />
+    <None Remove="Views\Resources\LeftPanelControlsImages\SettingsControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\StoryControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\WalletsControlImage.png" />
   </ItemGroup>
@@ -51,6 +52,7 @@
     <Resource Include="Views\Resources\LeftPanelControlsImages\AnalyticControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\ExpensesControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\IncomeControlImage.png" />
+    <Resource Include="Views\Resources\LeftPanelControlsImages\SettingsControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\StoryControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\WalletsControlImage.png" />
   </ItemGroup>
