@@ -20,11 +20,11 @@
                    HorizontalAlignment="Left"
                    Width="35" Height="35"/>
             <TextBlock Text="настройки"
-               Foreground="White"
-               VerticalAlignment="Center"
-               Margin="10 0 0 10"
-               FontFamily="Comic Sans MS"
-               FontSize="40"/>
+                       Foreground="White"
+                       VerticalAlignment="Center"
+                       Margin="10 0 0 10"
+                       FontFamily="Comic Sans MS"
+                       FontSize="40"/>
         </StackPanel>
     </Grid>
 
@@ -34,13 +34,13 @@
             <BeginStoryboard>
                 <Storyboard>
                     <DoubleAnimation To="1.05"
-                   Duration="0:0:0.2"
-                   Storyboard.TargetName="Scale"
-                   Storyboard.TargetProperty="ScaleX"/>
+                                     Duration="0:0:0.2"
+                                     Storyboard.TargetName="Scale"
+                                     Storyboard.TargetProperty="ScaleX"/>
                     <DoubleAnimation To="1.1"
-                   Duration="0:0:0.2"
-                   Storyboard.TargetName="Scale"
-                   Storyboard.TargetProperty="ScaleY"/>
+                                     Duration="0:0:0.2"
+                                     Storyboard.TargetName="Scale"
+                                     Storyboard.TargetProperty="ScaleY"/>
                 </Storyboard>
             </BeginStoryboard>
         </EventTrigger>
