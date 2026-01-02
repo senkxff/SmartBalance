@@ -20,22 +20,22 @@
     <Grid>
         <!-- Сетка -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width=".25*"/>
-            <ColumnDefinition Width=".75*"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition Height=".4*"/>
-            <RowDefinition Height=".5*"/>
         </Grid.RowDefinitions>
         <!-- -->
 
         <!-- LeftPanel -->
         <Rectangle Grid.Column="0" Grid.RowSpan="3"
-                   Fill="#1c1c1c"/>
+                   Fill="#1c1c1c"
+                   Width="250"/>
 
         <StackPanel Grid.Column="0" Grid.Row="1"
-                    HorizontalAlignment="Stretch"
+                    HorizontalAlignment="Left"
                     Margin="10">
             <lpc:IncomeControl Width="210" Height="50"/>
             <lpc:ExpensesControl Width="220" Height="50"
