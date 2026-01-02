@@ -30,9 +30,13 @@
     <Folder Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\" />
     <Folder Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\" />
     <Folder Include="Views\Resources\PagesControlsImages\WalletsPageControlsImages\" />
-    <Folder Include="Views\Windows\Warning\" />
     <Folder Include="Views\Windows\Forms\" />
     <Folder Include="Views\Pages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="5.3.1-ci1190" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.3.1-ci1190" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using SmartBalance.Views.Windows.Warning;
+using System.Windows;
 
 namespace SmartBalance
 {
@@ -14,7 +15,9 @@ namespace SmartBalance
 
         private void CloseControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            Application.Current.Shutdown();
+            ClosingWarningWindow closingWarningWindow = new ClosingWarningWindow();
+            closingWarningWindow.Owner = this;
+            closingWarningWindow.ShowDialog();
         }
 
         private void Narrow_ExpandControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
