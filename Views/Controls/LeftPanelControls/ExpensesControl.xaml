@@ -6,8 +6,7 @@
              xmlns:local="clr-namespace:SmartBalance.Views.Controls.LeftPanelControls"
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="220"
-             Cursor="Hand"
-             ToolTip="Расходы">
+             Cursor="Hand">
     
     <!-- ExpensesControl -->
     <Grid>

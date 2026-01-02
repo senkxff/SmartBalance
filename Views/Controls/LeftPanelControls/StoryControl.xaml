@@ -6,8 +6,7 @@
              xmlns:local="clr-namespace:SmartBalance.Views.Controls.LeftPanelControls"
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="210"
-             Cursor="Hand"
-             ToolTip="История">
+             Cursor="Hand">
     
     <!-- StoryControl -->
     <Grid>
