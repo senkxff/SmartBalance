@@ -35,8 +35,6 @@
             
             <Button x:Name="YesButton"
                     Content="Да"
-                    Background="Red"
-                    BorderBrush="Red"
                     Click="YesButton_Click"/>
             
         </StackPanel>

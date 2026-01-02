@@ -1,28 +1,28 @@
-﻿<UserControl x:Class="SmartBalance.Views.Controls.LeftPanelControls.IncomeControl"
+﻿<UserControl x:Class="SmartBalance.Views.Controls.LeftPanelControls.AnalyticControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SmartBalance.Views.Controls.LeftPanelControls"
              mc:Ignorable="d" 
-             d:DesignHeight="50" d:DesignWidth="210"
+             d:DesignHeight="50" d:DesignWidth="250"
              Cursor="Hand"
-             ToolTip="Доходы">
-
-    <!-- IncomeControl -->
+             ToolTip="Аналитика">
+    
+    <!-- AnalyticControl -->
     <Grid>
-
         <Grid.RenderTransform>
             <ScaleTransform x:Name="Scale" ScaleX="1" ScaleY="1"/>
         </Grid.RenderTransform>
-        
-        <StackPanel Orientation="Horizontal" >
-            <Image Source="/Views/Resources/LeftPanelControlsImages/IncomeControlImage.png"
-                   HorizontalAlignment="Left"/>
-            <TextBlock Text="доходы"
+
+        <StackPanel Orientation="Horizontal" Margin="5 0 0 0">
+            <Image Source="/Views/Resources/LeftPanelControlsImages/AnalyticControlImage.png"
+                   HorizontalAlignment="Left"
+                   Width="35" Height="35"/>
+            <TextBlock Text="аналитика"
                        Foreground="White"
                        VerticalAlignment="Center"
-                       Margin="0 0 0 0"
+                       Margin="10 0 0 0"
                        FontFamily="Comic Sans MS"
                        FontSize="40"/>
         </StackPanel>
@@ -34,13 +34,13 @@
             <BeginStoryboard>
                 <Storyboard>
                     <DoubleAnimation To="1.05"
-                                     Duration="0:0:0.2"
-                                     Storyboard.TargetName="Scale"
-                                     Storyboard.TargetProperty="ScaleX"/>
+                              Duration="0:0:0.2"
+                              Storyboard.TargetName="Scale"
+                              Storyboard.TargetProperty="ScaleX"/>
                     <DoubleAnimation To="1.1"
-                                     Duration="0:0:0.2"
-                                     Storyboard.TargetName="Scale"
-                                     Storyboard.TargetProperty="ScaleY"/>
+                              Duration="0:0:0.2"
+                              Storyboard.TargetName="Scale"
+                              Storyboard.TargetProperty="ScaleY"/>
                 </Storyboard>
             </BeginStoryboard>
         </EventTrigger>
@@ -48,16 +48,16 @@
             <BeginStoryboard>
                 <Storyboard>
                     <DoubleAnimation To="1"
-                                     Duration="0:0:0.2"
-                                     Storyboard.TargetName="Scale"
-                                     Storyboard.TargetProperty="ScaleX"/>
+                              Duration="0:0:0.2"
+                              Storyboard.TargetName="Scale"
+                              Storyboard.TargetProperty="ScaleX"/>
                     <DoubleAnimation To="1"
-                             Duration="0:0:0.2"
-                             Storyboard.TargetName="Scale"
-                             Storyboard.TargetProperty="ScaleY"/>
+                      Duration="0:0:0.2"
+                      Storyboard.TargetName="Scale"
+                      Storyboard.TargetProperty="ScaleY"/>
                 </Storyboard>
             </BeginStoryboard>
         </EventTrigger>
     </UserControl.Triggers>
-    
+
 </UserControl>
