@@ -10,6 +10,9 @@
       Title="IncomePage">
 
     <Grid>
-        <ipc:SalaryControl/>
+        <WrapPanel Orientation="Horizontal">
+            <ipc:SalaryControl/>
+            <ipc:AdditionalncomeControl/>
+        </WrapPanel>
     </Grid>
 </Page>
