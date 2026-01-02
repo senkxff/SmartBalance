@@ -1,0 +1,42 @@
+﻿<Window x:Class="SmartBalance.Views.Windows.Warning.ClosingWarningWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartBalance.Views.Windows.Warning"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Закрытие" 
+        Height="200" Width="400"
+        WindowStyle="None"
+        WindowStartupLocation="CenterOwner"
+        Background="#1e1e1e">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CornerRadius="10"/>
+    </WindowChrome.WindowChrome>
+    
+    <Grid>
+        <TextBlock Text="Вы действительно хотите выйти?" 
+                   TextWrapping="Wrap" TextAlignment="Center"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 80"
+                   FontSize="30" FontWeight="Bold"
+                   Foreground="White"/>
+
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Center" HorizontalAlignment="Center"
+                    Margin="0 100 0 0">
+            
+            <Button x:Name="NoButton"
+                    Content="Нет" 
+                    Margin="0 0 50 0"
+                    Style="{StaticResource MaterialDesignOutlinedButton}"
+                    Click="NoButton_Click"/>
+            
+            <Button x:Name="YesButton"
+                    Content="Да"
+                    Click="YesButton_Click"/>
+            
+        </StackPanel>
+    </Grid>
+</Window>
