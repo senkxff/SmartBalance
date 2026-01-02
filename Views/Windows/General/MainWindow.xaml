@@ -65,8 +65,10 @@
 
             <bc:CollapseControl Height="30" Width="30" 
                                 MouseLeftButtonDown="CollapseControl_MouseLeftButtonDown"/>
-            <bc:Narrow_ExpandControl Height="30" Width="30" 
-                                     MouseLeftButtonDown="Narrow_ExpandControl_MouseLeftButtonDown"/>
+            <bc:Narrow_ExpandControl x:Name="Narrow_ExpandControl"
+                                     Height="30" Width="30" 
+                                     MouseLeftButtonDown="Narrow_ExpandControl_MouseLeftButtonDown"
+                                     MouseEnter="Narrow_ExpandControl_MouseEnter"/>
             <bc:CloseControl Height="30" Width="30"
                              MouseLeftButtonDown="CloseControl_MouseLeftButtonDown"/>
         </StackPanel>

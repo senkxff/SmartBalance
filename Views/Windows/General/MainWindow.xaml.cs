@@ -1,4 +1,5 @@
-﻿using SmartBalance.Views.Windows.Warning;
+﻿using SmartBalance.Views.Controls.BaseControls;
+using SmartBalance.Views.Windows.Warning;
 using System.Windows;
 
 namespace SmartBalance
@@ -29,6 +30,18 @@ namespace SmartBalance
             else
             {
                 this.WindowState = WindowState.Normal;
+            }
+        }
+
+        private void Narrow_ExpandControl_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            if (this.WindowState == WindowState.Normal)
+            {
+                Narrow_ExpandControl.ToolTip = "Расширить";
+            }
+            else
+            {
+                Narrow_ExpandControl.ToolTip = "Уменьшить";
             }
         }
 
