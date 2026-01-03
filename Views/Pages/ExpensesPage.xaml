@@ -15,6 +15,7 @@
             <epc:HouseExpensesControl/>
             <epc:PhoneExpensesControl/>
             <epc:RestExpensesControl/>
+            <epc:TransportExpensesControl/>
         </WrapPanel>
     </Grid>
 </Page>
