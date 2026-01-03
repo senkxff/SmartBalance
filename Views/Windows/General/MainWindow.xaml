@@ -35,7 +35,8 @@
               Width="68">
             <Rectangle Grid.Column="0" Grid.RowSpan="3"
                        Fill="#1c1c1c"
-                       Width="275"/>
+                       Width="275"
+                       Panel.ZIndex="0"/>
 
             <StackPanel Grid.Column="0" Grid.RowSpan="2"
                         HorizontalAlignment="Left"
@@ -117,7 +118,8 @@
                Grid.ColumnSpan="2" Grid.RowSpan="2"
                HorizontalAlignment="Center" VerticalAlignment="Center"
                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-               NavigationUIVisibility="Hidden"/>
+               NavigationUIVisibility="Hidden"
+               Panel.ZIndex="-1"/>
         <!-- -->
     </Grid>
 </Window>

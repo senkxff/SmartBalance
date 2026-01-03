@@ -23,6 +23,7 @@
     <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\HouseExpensesControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\PhoneExpensesControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\RestExpensesControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\ShoppingExpensesControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\TransportExpensesControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\IncomePageControlsImages\AdditionalIncomeControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\IncomePageControlsImages\SalaryControlImage.png" />
@@ -37,7 +38,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="ViewModels\Base\" />
-    <Folder Include="Views\Windows\Forms\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -60,6 +60,7 @@
     <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\HouseExpensesControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\PhoneExpensesControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\RestExpensesControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\ShoppingExpensesControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\TransportExpensesControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\AdditionalIncomeControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\SalaryControlImage.png" />
