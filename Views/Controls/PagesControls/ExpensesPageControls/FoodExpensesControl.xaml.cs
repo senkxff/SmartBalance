@@ -17,7 +17,7 @@ namespace SmartBalance.Views.Controls.PagesControls.ExpensesPageControls
 
         private void Grid_MouseEnter(object sender, MouseEventArgs e)
         {
-            Ellipse.Fill = new SolidColorBrush(Colors.SlateBlue);
+            Ellipse.Fill = new SolidColorBrush(Colors.Blue);
             Title.Foreground = Brushes.DarkSlateGray;
             Sum.Foreground = Brushes.Red;
         }
