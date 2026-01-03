@@ -22,6 +22,7 @@
     <None Remove="Views\Resources\PagesControlsImages\IncomePageControlsImages\AdditionalIncomeControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\IncomePageControlsImages\SalaryControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CardControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CashControlImage.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,6 +56,7 @@
     <Resource Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\AdditionalIncomeControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\SalaryControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CardControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CashControlImage.png" />
   </ItemGroup>
 
 </Project>
