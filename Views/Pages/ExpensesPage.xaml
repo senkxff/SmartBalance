@@ -13,6 +13,7 @@
         <WrapPanel>
             <epc:FoodExpensesControl/>
             <epc:HouseExpensesControl/>
+            <epc:PhoneExpensesControl/>
         </WrapPanel>
     </Grid>
 </Page>
