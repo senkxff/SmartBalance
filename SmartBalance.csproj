@@ -20,6 +20,7 @@
     <None Remove="Views\Resources\LeftPanelControlsImages\StoryControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\WalletsControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\FoodExpensesControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\HouseExpensesControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\IncomePageControlsImages\AdditionalIncomeControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\IncomePageControlsImages\SalaryControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CardControlImage.png" />
@@ -53,6 +54,7 @@
     <Resource Include="Views\Resources\LeftPanelControlsImages\StoryControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\WalletsControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\FoodExpensesControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\HouseExpensesControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\AdditionalIncomeControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\SalaryControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CardControlImage.png" />

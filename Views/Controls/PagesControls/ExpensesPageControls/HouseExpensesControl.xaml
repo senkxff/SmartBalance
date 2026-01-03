@@ -1,20 +1,20 @@
-﻿<UserControl x:Class="SmartBalance.Views.Controls.PagesControls.ExpensesPageControls.FoodExpensesControl"
+﻿<UserControl x:Class="SmartBalance.Views.Controls.PagesControls.ExpensesPageControls.HouseExpensesControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SmartBalance.Views.Controls.PagesControls.ExpensesPageControls"
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="85">
-
+             Height="100" Width="85">
+    
     <Grid MouseEnter="Grid_MouseEnter"
           MouseLeave="Grid_MouseLeave">
         <Button 
-                    Background="Transparent"
-                    BorderThickness="0"
-                    Padding="0"
-                    Focusable="False"
-                    FocusVisualStyle="{x:Null}" Cursor="Hand">
+                Background="Transparent"
+                BorderThickness="0"
+                Padding="0"
+                Focusable="False"
+                FocusVisualStyle="{x:Null}" Cursor="Hand">
 
             <!-- Уборка выделения -->
             <Button.Style>
@@ -38,32 +38,32 @@
 
                 <!-- Название -->
                 <TextBlock x:Name="Title"
-                               Grid.Row="0"
-                               Text="Питание"
-                               HorizontalAlignment="Center"
-                               Foreground="Gray"
-                               FontFamily="Comic Sans MS"
-                               FontSize="15"/>
+                           Grid.Row="0"
+                           Text="ЖКХ"
+                           HorizontalAlignment="Center"
+                           Foreground="Gray"
+                           FontFamily="Comic Sans MS"
+                           FontSize="15"/>
 
                 <!-- Круг с картинкой -->
                 <Grid Grid.Row="1" 
-                          HorizontalAlignment="Center" VerticalAlignment="Center">
+                      HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Ellipse x:Name="Ellipse"
-                                 Width="55" Height="55"
-                                 Fill="CornflowerBlue"/>
+                             Width="55" Height="55"
+                             Fill="MediumPurple"/>
 
-                    <Image Source="/Views/Resources/PagesControlsImages/ExpensesPageControlsImages/FoodExpensesControlImage.png"
-                               Width="35" Height="35"
-                               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Image Source="/Views/Resources/PagesControlsImages/ExpensesPageControlsImages/HouseExpensesControlImage.png"
+                           Width="35" Height="35"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Grid>
 
                 <!-- Сумма -->
                 <TextBlock x:Name="Sum"
-                               Grid.Row="2"
-                               Text="0"
-                               HorizontalAlignment="Center"
-                               Foreground="IndianRed"
-                               FontFamily="Comic Sans MS" FontSize="15" FontWeight="Bold"/>
+                           Grid.Row="2"
+                           Text="0"
+                           HorizontalAlignment="Center"
+                           Foreground="IndianRed"
+                           FontFamily="Comic Sans MS" FontSize="15" FontWeight="Bold"/>
             </Grid>
         </Button>
     </Grid>

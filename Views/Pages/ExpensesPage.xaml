@@ -10,6 +10,9 @@
       Title="ExpensesPage" Cursor="">
 
     <Grid>
-        <epc:FoodExpensesControl/>
+        <WrapPanel>
+            <epc:FoodExpensesControl/>
+            <epc:HouseExpensesControl/>
+        </WrapPanel>
     </Grid>
 </Page>
