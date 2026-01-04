@@ -10,7 +10,8 @@
         Title="Умный Баланс" 
         MinHeight="600" MinWidth="900" Width="1000"
         WindowStyle="None"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Background="#E6E6E6">
 
     <WindowChrome.WindowChrome>
         <WindowChrome CornerRadius="20"
