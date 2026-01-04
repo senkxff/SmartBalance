@@ -12,6 +12,12 @@ namespace SmartBalance
     /// </summary>
     public partial class MainWindow : Window
     {
+        // данные окна
+        private double normalLeft;
+        private double normalTop;
+
+        private bool isMaximized = false;
+
         // объявление и создание страниц
         static internal readonly IncomePage incomePage = new();
         static internal readonly ExpensesPage expensesPage = new();
@@ -38,19 +44,30 @@ namespace SmartBalance
 
         private void Narrow_ExpandControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            if (this.WindowState == WindowState.Normal)
+            if (!isMaximized)
             {
-                this.WindowState = WindowState.Maximized;
+                normalLeft = this.Left;
+                normalTop = this.Top;
+
+                this.Left = SystemParameters.WorkArea.Left;
+                this.Top = SystemParameters.WorkArea.Top;
+                this.Width = SystemParameters.WorkArea.Width;
+                this.Height = SystemParameters.WorkArea.Height;
             }
             else
             {
-                this.WindowState = WindowState.Normal;
+                this.Left = normalLeft;
+                this.Top = normalTop;
+                this.Width = 1000;
+                this.Height = 600;
             }
+            
+            isMaximized = !isMaximized;
         }
 
         private void Narrow_ExpandControl_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            if (this.WindowState == WindowState.Normal)
+            if (!isMaximized)
             {
                 Narrow_ExpandControl.ToolTip = "Расширить";
             }
