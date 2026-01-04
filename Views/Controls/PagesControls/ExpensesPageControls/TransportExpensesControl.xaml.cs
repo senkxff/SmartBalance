@@ -1,39 +1,41 @@
 ﻿using SmartBalance.Views.Pages;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
-namespace SmartBalance.Views.Controls.PagesControls.IncomePageControls
+namespace SmartBalance.Views.Controls.PagesControls.ExpensesPageControls
 {
     /// <summary>
-    /// Логика взаимодействия для SalaryControl.xaml
+    /// Логика взаимодействия для TransportExpensesControl.xaml
     /// </summary>
-    public partial class SalaryControl : UserControl
+    public partial class TransportExpensesControl : UserControl
     {
-        public SalaryControl()
+        public TransportExpensesControl()
         {
             InitializeComponent();
         }
 
-        // Изменение при наведении
-        private void Grid_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
-        {
-            Ellipse.Fill = new SolidColorBrush(Colors.DarkOrange);
-            Title.Foreground = Brushes.DarkSlateGray;
-            Sum.Foreground = Brushes.Green;
-        }
-        private void Grid_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        private void Grid_MouseEnter(object sender, MouseEventArgs e)
         {
             Ellipse.Fill = new SolidColorBrush(Colors.Orange);
-            Title.Foreground = Brushes.Gray;
-            Sum.Foreground = Brushes.ForestGreen;
+            Title.Foreground = Brushes.DarkSlateGray;
+            Sum.Foreground = Brushes.Red;
         }
 
-        // Подгрузка страницы "AddPage"
+        private void Grid_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Ellipse.Fill = new SolidColorBrush(Colors.Yellow);
+            Title.Foreground = Brushes.Gray;
+            Sum.Foreground = Brushes.IndianRed;
+        }
+
+        // Подгрузка страницы "AddExpensesPage"
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AddIncomePage addIncomePage = new AddIncomePage();
+            AddExpensesPage addIncomePage = new AddExpensesPage();
 
             Navigate(addIncomePage);
         }

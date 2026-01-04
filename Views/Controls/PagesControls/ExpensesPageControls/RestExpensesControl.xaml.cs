@@ -4,36 +4,36 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 
-namespace SmartBalance.Views.Controls.PagesControls.IncomePageControls
+namespace SmartBalance.Views.Controls.PagesControls.ExpensesPageControls
 {
     /// <summary>
-    /// Логика взаимодействия для SalaryControl.xaml
+    /// Логика взаимодействия для RestExpensesControl.xaml
     /// </summary>
-    public partial class SalaryControl : UserControl
+    public partial class RestExpensesControl : UserControl
     {
-        public SalaryControl()
+        public RestExpensesControl()
         {
             InitializeComponent();
         }
 
-        // Изменение при наведении
         private void Grid_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            Ellipse.Fill = new SolidColorBrush(Colors.DarkOrange);
+            Ellipse.Fill = new SolidColorBrush(Colors.SaddleBrown);
             Title.Foreground = Brushes.DarkSlateGray;
-            Sum.Foreground = Brushes.Green;
-        }
-        private void Grid_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
-        {
-            Ellipse.Fill = new SolidColorBrush(Colors.Orange);
-            Title.Foreground = Brushes.Gray;
-            Sum.Foreground = Brushes.ForestGreen;
+            Sum.Foreground = Brushes.Red;
         }
 
-        // Подгрузка страницы "AddPage"
+        private void Grid_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            Ellipse.Fill = new SolidColorBrush(Colors.SandyBrown);
+            Title.Foreground = Brushes.Gray;
+            Sum.Foreground = Brushes.IndianRed;
+        }
+
+        // Подгрузка страницы "AddExpensesPage"
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AddIncomePage addIncomePage = new AddIncomePage();
+            AddExpensesPage addIncomePage = new AddExpensesPage();
 
             Navigate(addIncomePage);
         }

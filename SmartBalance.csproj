@@ -19,8 +19,16 @@
     <None Remove="Views\Resources\LeftPanelControlsImages\SettingsControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\StoryControlImage.png" />
     <None Remove="Views\Resources\LeftPanelControlsImages\WalletsControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\FoodExpensesControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\HouseExpensesControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\PhoneExpensesControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\RestExpensesControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\ShoppingExpensesControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\TransportExpensesControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\IncomePageControlsImages\AdditionalIncomeControlImage.png" />
     <None Remove="Views\Resources\PagesControlsImages\IncomePageControlsImages\SalaryControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CardControlImage.png" />
+    <None Remove="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CashControlImage.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,11 +38,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="ViewModels\Base\" />
-    <Folder Include="Views\Controls\PagesControls\ExpensesPageControls\" />
-    <Folder Include="Views\Controls\PagesControls\WalletsPageControls\" />
-    <Folder Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\" />
-    <Folder Include="Views\Resources\PagesControlsImages\WalletsPageControlsImages\" />
-    <Folder Include="Views\Windows\Forms\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -53,8 +56,16 @@
     <Resource Include="Views\Resources\LeftPanelControlsImages\SettingsControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\StoryControlImage.png" />
     <Resource Include="Views\Resources\LeftPanelControlsImages\WalletsControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\FoodExpensesControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\HouseExpensesControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\PhoneExpensesControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\RestExpensesControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\ShoppingExpensesControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\ExpensesPageControlsImages\TransportExpensesControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\AdditionalIncomeControlImage.png" />
     <Resource Include="Views\Resources\PagesControlsImages\IncomePageControlsImages\SalaryControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CardControlImage.png" />
+    <Resource Include="Views\Resources\PagesControlsImages\WalletsPageControlsImages\CashControlImage.png" />
   </ItemGroup>
 
 </Project>

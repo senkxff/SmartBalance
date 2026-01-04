@@ -10,7 +10,8 @@
         Title="Умный Баланс" 
         MinHeight="600" MinWidth="900" Width="1000"
         WindowStyle="None"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Background="#E6E6E6">
 
     <WindowChrome.WindowChrome>
         <WindowChrome CornerRadius="20"
@@ -30,16 +31,18 @@
         <!-- -->
 
         <!-- LeftPanel -->
-        <Grid Grid.Column="0" Grid.RowSpan="3" 
+        <Grid Grid.Column="0" Grid.RowSpan="2" 
               HorizontalAlignment="Left" 
               Width="68">
             <Rectangle Grid.Column="0" Grid.RowSpan="3"
                        Fill="#1c1c1c"
-                       Width="275"/>
+                       Width="275"
+                       Panel.ZIndex="2"/>
 
             <StackPanel Grid.Column="0" Grid.RowSpan="2"
                         HorizontalAlignment="Left"
-                        Margin="10">
+                        Margin="10"
+                        Panel.ZIndex="2">
                 <lpc:IncomeControl Width="210" Height="50"
                                    HorizontalAlignment="Left"
                                    MouseLeftButtonDown="IncomeControl_MouseLeftButtonDown"/>
@@ -68,7 +71,8 @@
                                      Width="250" Height="50"
                                      Margin="10"
                                      HorizontalAlignment="Left" VerticalAlignment="Bottom"
-                                     MouseLeftButtonDown="SettingsControl_MouseLeftButtonDown"/>
+                                     MouseLeftButtonDown="SettingsControl_MouseLeftButtonDown"
+                                     Panel.ZIndex="2"/>
             
             <!-- Анимация при наведении -->
             <Grid.Triggers>
@@ -117,7 +121,8 @@
                Grid.ColumnSpan="2" Grid.RowSpan="2"
                HorizontalAlignment="Center" VerticalAlignment="Center"
                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-               NavigationUIVisibility="Hidden"/>
+               NavigationUIVisibility="Hidden"
+               Panel.ZIndex="-1"/>
         <!-- -->
     </Grid>
 </Window>
