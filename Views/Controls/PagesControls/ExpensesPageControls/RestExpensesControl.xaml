@@ -9,7 +9,7 @@
     
     <Grid MouseEnter="Grid_MouseEnter"
           MouseLeave="Grid_MouseLeave">
-        <Button 
+        <Button Click="Button_Click"
                 Background="Transparent"
                 BorderThickness="0"
                 Padding="0"

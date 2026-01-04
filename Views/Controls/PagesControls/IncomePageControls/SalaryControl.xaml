@@ -14,7 +14,8 @@
                 BorderThickness="0"
                 Padding="0"
                 Focusable="False"
-                FocusVisualStyle="{x:Null}" Cursor="Hand">
+                FocusVisualStyle="{x:Null}" Cursor="Hand"
+                Click="Button_Click">
 
             <!-- Уборка выделения -->
             <Button.Style>

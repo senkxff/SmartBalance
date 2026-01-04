@@ -30,17 +30,18 @@
         <!-- -->
 
         <!-- LeftPanel -->
-        <Grid Grid.Column="0" Grid.RowSpan="3" 
+        <Grid Grid.Column="0" Grid.RowSpan="2" 
               HorizontalAlignment="Left" 
               Width="68">
             <Rectangle Grid.Column="0" Grid.RowSpan="3"
                        Fill="#1c1c1c"
                        Width="275"
-                       Panel.ZIndex="0"/>
+                       Panel.ZIndex="2"/>
 
             <StackPanel Grid.Column="0" Grid.RowSpan="2"
                         HorizontalAlignment="Left"
-                        Margin="10">
+                        Margin="10"
+                        Panel.ZIndex="2">
                 <lpc:IncomeControl Width="210" Height="50"
                                    HorizontalAlignment="Left"
                                    MouseLeftButtonDown="IncomeControl_MouseLeftButtonDown"/>
@@ -69,7 +70,8 @@
                                      Width="250" Height="50"
                                      Margin="10"
                                      HorizontalAlignment="Left" VerticalAlignment="Bottom"
-                                     MouseLeftButtonDown="SettingsControl_MouseLeftButtonDown"/>
+                                     MouseLeftButtonDown="SettingsControl_MouseLeftButtonDown"
+                                     Panel.ZIndex="2"/>
             
             <!-- Анимация при наведении -->
             <Grid.Triggers>

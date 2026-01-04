@@ -13,8 +13,8 @@ namespace SmartBalance
     public partial class MainWindow : Window
     {
         // объявление и создание страниц
-        private readonly IncomePage incomePage = new();
-        private readonly ExpensesPage expensesPage = new();
+        static internal readonly IncomePage incomePage = new();
+        static internal readonly ExpensesPage expensesPage = new();
         private readonly WalletsPage walletsPage = new();
         private readonly AnalyticPage analyticPage = new();
         private readonly StoryPage storyPage = new();
