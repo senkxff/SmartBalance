@@ -27,7 +27,7 @@ namespace SmartBalance
             Navigate(incomePage);
         }
 
-        // базовые кнопки
+        // Базовые кнопки
         private void CloseControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             ClosingWarningWindow closingWarningWindow = new ClosingWarningWindow();
@@ -80,33 +80,12 @@ namespace SmartBalance
             Frame.BeginAnimation(UIElement.OpacityProperty, animation);
         }
 
-        private void IncomeControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            Navigate(incomePage);
-        }
-        private void ExpensesControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            Navigate(expensesPage);
-        }
-        private void WalletsControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            Navigate(walletsPage);
-        }
-        private void AnalyticControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            Navigate(analyticPage);
-        }
-        private void StoryControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            Navigate(storyPage);
-        }
-        private void AdviceControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            Navigate(advicePage);
-        }
-        private void SettingsControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            Navigate(settingsPage);
-        }
+        private void IncomeControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => Navigate(incomePage);
+        private void ExpensesControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => Navigate(expensesPage);
+        private void WalletsControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => Navigate(walletsPage);
+        private void AnalyticControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => Navigate(analyticPage);
+        private void StoryControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => Navigate(storyPage);
+        private void AdviceControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => Navigate(advicePage);
+        private void SettingsControl_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => Navigate(settingsPage);
     }
 }
