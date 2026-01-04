@@ -51,9 +51,7 @@ namespace SmartBalance.Views.Pages
                     To = 1,
                     Duration = TimeSpan.FromSeconds(0.4)
                 };
-                MainWindow.incomePage.BeginAnimation(OpacityProperty, fadeIn);
-
-                this.NavigationService.Navigate(MainWindow.incomePage);
+                MainWindow.expensesPage.BeginAnimation(OpacityProperty, fadeIn);
 
                 this.NavigationService.Navigate(MainWindow.expensesPage);
             }
