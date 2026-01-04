@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:SmartBalance.Views.Pages"
       xmlns:wpc="clr-namespace:SmartBalance.Views.Controls.PagesControls.WalletsPageControls"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="500" d:DesignWidth="800"
       Title="AddIncomePage">
 
     <Grid>
@@ -14,8 +14,8 @@
                 CornerRadius="10" 
                 BorderThickness="3">
             <WrapPanel Orientation="Vertical" 
-                       Margin="10">
-                
+                       Margin="20 10 10 15">
+
                 <!-- Сумма -->
                 <StackPanel Orientation="Horizontal" 
                             HorizontalAlignment="Left" VerticalAlignment="Stretch">
@@ -24,15 +24,15 @@
                                Margin="0 0 10 0"
                                Foreground="White"
                                FontWeight="Bold"/>
-                    <TextBox Width="170" Height="35"
+                    <TextBox Width="130" Height="35"
                              Style="{StaticResource MaterialDesignTextBox}"
                              FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold"
-                             Foreground="YellowGreen"
+                             Foreground="IndianRed"
                              PreviewTextInput="TextBox_PreviewTextInput">
                     </TextBox>
                 </StackPanel>
                 <!-- -->
-                
+
                 <!-- Кошельки -->
                 <TextBlock Text="Кошельки:" 
                            FontSize="30" FontFamily="Comic Sans MS"
@@ -53,29 +53,25 @@
                            Margin="0 0 10 0"
                            Foreground="White"
                            FontWeight="Bold"/>
-                <TextBox Width="300" Height="160"
-                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                        FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold"
-                        TextWrapping="Wrap"
-                        Foreground="White"/>
+                <TextBox Width="250" Height="120"
+                         Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                         FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold"
+                         TextWrapping="Wrap"
+                         Foreground="White"
+                         Margin="0 0 20 10"/>
                 <!-- -->
-                
+
                 <!-- Дата -->
                 <StackPanel>
-                    <TextBlock Text="Дата:" 
-                               FontSize="30" FontFamily="Comic Sans MS"
-                               Foreground="White"
-                               Margin="20 0 0 0"
-                               FontWeight="Bold"/>
+
                     <Calendar HorizontalAlignment="Left" VerticalAlignment="Stretch"
-                              Width="250" Height="300"
-                              Margin="20 0 0 0"/>
+                               Width="250" Height="300"/>
                 </StackPanel>
-                <!-- -->      
-                
+                <!-- -->
+
                 <!-- Кнопки -->
                 <StackPanel Orientation="Horizontal"
-                            Margin="20 12 0 0">
+                            Margin="0 15 0 0">
                     <Button x:Name="CancellationButton"
                             Height="30" Width="100"
                             Content="Отмена"
