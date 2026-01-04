@@ -45,7 +45,15 @@ namespace SmartBalance.Views.Pages
                 this.BeginAnimation(Page.OpacityProperty, fadeOut);
 
                 await Task.Delay(700);
-                
+
+                var fadeIn = new DoubleAnimation()
+                {
+                    From = 0,
+                    To = 1,
+                    Duration = TimeSpan.FromSeconds(0.4)
+                };
+                MainWindow.incomePage.BeginAnimation(OpacityProperty, fadeIn);
+
                 this.NavigationService.Navigate(MainWindow.incomePage);
             }
         }

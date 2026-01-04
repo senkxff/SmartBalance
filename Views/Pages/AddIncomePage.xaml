@@ -10,7 +10,9 @@
       Title="AddIncomePage">
 
     <Grid>
-        <Border Background="#1e1e1e" CornerRadius="10" BorderThickness="3">
+        <Border Background="#1e1e1e" 
+                CornerRadius="10" 
+                BorderThickness="3">
             <WrapPanel Orientation="Vertical" 
                        Margin="10">
                 

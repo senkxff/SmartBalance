@@ -32,6 +32,7 @@ namespace SmartBalance
         {
             ClosingWarningWindow closingWarningWindow = new ClosingWarningWindow();
             closingWarningWindow.Owner = this;
+
             closingWarningWindow.ShowDialog();
         }
 
