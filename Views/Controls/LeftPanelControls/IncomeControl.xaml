@@ -22,8 +22,7 @@
                        Foreground="White"
                        VerticalAlignment="Center"
                        Margin="0 0 0 0"
-                       FontFamily="Comic Sans MS"
-                       FontSize="40"/>
+                       FontFamily="Bahnschrift" FontSize="40"/>
         </StackPanel>
     </Grid>
 

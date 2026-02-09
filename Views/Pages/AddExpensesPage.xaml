@@ -10,7 +10,7 @@
       Title="AddExpensesPage">
 
     <Grid>
-        <Border Background="#1e1e1e" CornerRadius="10" BorderThickness="3">
+        <Border Background="#1e1e1e" CornerRadius="10" BorderThickness="3" Margin="10,-10,-10,10">
             <WrapPanel Orientation="Vertical" 
                        Margin="20 10 10 15">
 
@@ -18,10 +18,9 @@
                 <StackPanel Orientation="Horizontal" 
                             HorizontalAlignment="Left" VerticalAlignment="Stretch">
                     <TextBlock Text="Сумма:" 
-                               FontSize="30" FontFamily="Comic Sans MS"
+                               FontSize="30" FontFamily="Bahnschrift" FontWeight="Bold"
                                Margin="0 0 10 0"
-                               Foreground="White"
-                               FontWeight="Bold"/>
+                               Foreground="White"/>
                     <TextBox Width="130" Height="35"
                              Style="{StaticResource MaterialDesignTextBox}"
                              FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold"
@@ -34,10 +33,9 @@
 
                 <!-- Кошельки -->
                 <TextBlock Text="Кошельки:" 
-                           FontSize="30" FontFamily="Comic Sans MS"
+                           FontSize="30" FontFamily="Bahnschrift" FontWeight="Bold"
                            Margin="0 0 10 0"
-                           Foreground="White"
-                           FontWeight="Bold"/>
+                           Foreground="White"/>
                 <WrapPanel>
                     <wpc:CashControl x:Name="CashControl"
                                      PreviewMouseLeftButtonDown="CashControl_PreviewMouseLeftButtonDown"/>
@@ -48,11 +46,10 @@
 
                 <!-- Комментарий -->
                 <TextBlock Text="Комментарий:" 
-                           FontSize="30" FontFamily="Comic Sans MS"
+                           FontSize="30" FontFamily="Bahnschrift" FontWeight="Bold"
                            Margin="0 0 10 0"
-                           Foreground="White"
-                           FontWeight="Bold"/>
-                <TextBox Width="250" Height="120"
+                           Foreground="White"/>
+                <TextBox Width="250" Height="137"
                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
                          FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold"
                          TextWrapping="Wrap"
