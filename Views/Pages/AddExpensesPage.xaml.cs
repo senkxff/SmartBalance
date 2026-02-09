@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using SmartBalance.ViewModels;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -23,6 +24,7 @@ namespace SmartBalance.Views.Pages
         public AddExpensesPage()
         {
             InitializeComponent();
+            this.DataContext = new ExpensesViewModel();
         }
 
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs inputedInformation)
